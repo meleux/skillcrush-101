@@ -1,70 +1,62 @@
 /***** BASE STYLES *****/
+html {
+    font-size: 16px;
+}
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-}
-
-#about, #work, #contact {
-  height: 600px;
+  font-size: 1em;
 }
 
 /***** GRID *****/
 
-.full-width {
-  width: 1200px;
+.full-width, .half-width, .third-width {
+  width: 100%;
   margin: 0 auto;
-}
-
-.half-width {
-  width: 600px;
-  float: left;
-}
-
-.third-width {
-  width: 400px;
-  float: left;
 }
 
 /***** HEADER *****/
 
 header {
-  height: 800px;
-  background: url('../img/hero.png');
+  background: url('../img/hero.png') no-repeat center;
   background-size: cover;
+  height: auto;
+  font-size: 1em;
 }
 
 header h1 {
-  padding: 50px 0;
+  font-size: 1.875em;
+  padding: 1em 0 0 2.5em;
   font-family: 'Lora', serif;
-  font-size: 30px;
   color: #bbc085;
 }
 
 nav {
-  float: right;
-  padding: 75px 40px;
+  margin-left: auto;
+	margin-right: auto;
+  padding: 1.5em 0 0 2em;
 }
 
 nav ul li {
   display: inline-block;
+  padding: 0 .625em 0 .25em;
 }
 
 nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125em;
   color: #828282;
-  padding-left: 80px;
 }
 
 header h2 {
-  width: 1000px;
   clear: both;
+  width: 75%;
   font-family: 'Lora', serif;
-  font-size: 65px;
-  color: #9b9b9b;
-  line-height: 75px;
-  padding: 20px 0;
+  font-size: 2em;
+  color: #2b2b2b;
+  line-height: 115%;
+  padding: 1em 0 1em .5em;
 }
 
 header h2 span {
@@ -72,21 +64,24 @@ header h2 span {
 }
 
 /***** ABOUT *****/
-
+#about {
+  font-size: 1em;
+  height: auto;
+}
 #about .full-width {
-  padding: 80px 0;
+  padding: 4em 0 2em .5em;
 }
 
 #about h2 {
   font-family: 'Lora', serif;
-  font-size: 36px;
+  font-size: 1.5em;
 }
 
 #about p {
-  font-size: 21px;
+  font-size: 1.2em;
   color: #7f7f7f;
-  line-height: 40px;
-  padding-right: 50px;
+  line-height: 2em;
+  padding-right: 1em;
 }
 
 /***** WORK *****/
@@ -94,73 +89,73 @@ header h2 span {
 #work {
   background: #f9ceb7;
   text-align: center;
+  font-size: 1em;
+  height: auto;
 }
 
 #work .full-width {
-  padding: 115px 0;
+  padding: 4em 0;
 }
 
 #work img {
-  padding-bottom: 30px;
+  padding: 1em;
 }
 
 #work h3 {
-  font-size: 24px;
-  width: 190px;
+  font-size: 1.5em;
+  width: auto;
   margin: 0 auto;
 }
 
 #work p {
   font-family: 'Lora', serif;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.2em;
+  line-height: 1.5em;
   color: #2b2b2b;
-  padding: 0 35px;
+  padding: 0 2em;
 }
 
 /***** CONTACT *****/
 
 #contact {
   background: #ebebeb;
+  font-size: 1em;
+  height: auto;
 }
 
 #contact .full-width {
-  padding: 110px 0;
+  padding: 4em 0;
 }
 
 #contact-img {
-  border: 12px solid #ffffff;
+  max-width: 100%;
+  border: 1px solid #ffffff;
 }
 
-#contact h2, #email-header, #socialmedia-header, #contact ul {
-  padding-left: 115px;
+#contact-info {
+  text-align: center;
 }
 
 #envelope {
-  padding: 0 10px 0 115px;
+  padding: 0 .625em 0 0;
+  width: 1em;
 }
 
 #contact h2 {
   font-family: 'Lora', serif;
-  font-size: 36px;
+  font-size: 2em;
 }
 
 #email-header {
-  font-size: 30px;
+  font-size: 1.5em;
   font-weight: normal;
-  margin: -30px 0 5px 0;
-}
-
-#socialmedia-header {
-  font-size: 29px;
-  font-weight: bold;
-  margin: 40px 0 0 0;
+  margin: -1em 0 .167em 0;
 }
 
 #contact a {
   color: #c49075;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
@@ -173,5 +168,298 @@ header h2 span {
 }
 
 #contact ul img {
-  padding-right: 48px;
+  padding-right: 1em;
+  width: 1em;
+}
+
+/*---------- TABLET ----------*/
+@media all and (min-width:768px) {
+  /***** GRID *****/
+
+  .full-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .half-width {
+    width: 50%;
+    float: left;
+  }
+
+  .third-width {
+    width: 33.33%;
+    float: left;
+  }
+
+  /***** HEADER *****/
+  header {
+    height: 25em;
+    background: url('../img/hero.png');
+    background-size: cover;
+    font-size: 1em;
+  }
+  header h1 {
+    font-size: 1.875em;
+    padding: .7em 0 0 .667em;
+    font-family: 'Lora', serif;
+    color: #bbc085;
+  }
+
+  nav {
+    float: right;
+    padding: 2em 1em;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.125em;
+    color: #828282;
+    padding-left: 1.5em;
+  }
+
+  header h2 {
+    width: 83%;
+    clear: both;
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    color: #9b9b9b;
+    line-height: 115%;
+    padding: .3em 0 0 .5em;
+  }
+
+  header h2 span {
+    color: #2b2b2b;
+  }
+
+  /***** ABOUT *****/
+  #about {
+    font-size: 1em;
+    height: 32em;
+  }
+  #about .full-width {
+    padding: 4em 0 0 1.25em;
+  }
+
+  #about h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.875em;
+  }
+
+  #about p {
+    width: 90%;
+    font-size: 1.2em;
+    color: #7f7f7f;
+    line-height: 1.5em;
+    padding-right: 0;
+  }
+
+  /***** WORK *****/
+  #work {
+    background: #f9ceb7;
+    text-align: center;
+    font-size: 1em;
+    height: 30em;
+  }
+
+  #work .full-width {
+    padding: 4em 0;
+  }
+
+  #work p {
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #2b2b2b;
+    padding: 0 2em;
+  }
+
+  /***** CONTACT *****/
+  #contact {
+    background: #ebebeb;
+    font-size: 1em;
+    height: 25em;
+  }
+
+  #contact .full-width {
+    padding: 4em 0 0 1.25em;
+  }
+}
+
+/*---------- DESKTOP ----------*/
+@media all and (min-width:940px) {
+  /***** GRID *****/
+  .full-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .half-width {
+    width: 50%;
+    float: left;
+  }
+
+  .third-width {
+    width: 33.33%;
+    float: left;
+  }
+
+  /***** HEADER *****/
+  header {
+    height: 50em;
+    background: url('../img/hero.png');
+    background-size: cover;
+    font-size: 1em;
+  }
+
+  header h1 {
+    font-size: 1.875em;
+    padding: 1.67em 0;
+    font-family: 'Lora', serif;
+    color: #bbc085;
+  }
+
+  nav {
+    float: right;
+    padding: 4.7em 2.5em;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.125em;
+    color: #828282;
+    padding-left: 4.44em;
+  }
+
+  header h2 {
+    width: 83%;
+    clear: both;
+    font-family: 'Lora', serif;
+    font-size: 4.063em;
+    color: #9b9b9b;
+    line-height: 115%;
+    padding: .3em 0;
+  }
+
+  header h2 span {
+    color: #2b2b2b;
+  }
+
+  /***** ABOUT *****/
+  #about {
+    font-size: 1em;
+    height: 37.5em;
+  }
+  #about .full-width {
+    padding: 5em 0;
+  }
+
+  #about h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.25em;
+  }
+
+  #about p {
+    font-size: 1.3125em;
+    color: #7f7f7f;
+    line-height: 2em;
+    padding-right: 2.38em;
+  }
+
+  /***** WORK *****/
+  #work {
+    background: #f9ceb7;
+    text-align: center;
+    font-size: 1em;
+    height: 37.5em;
+  }
+
+  #work .full-width {
+    padding: 7.2em 0;
+  }
+
+  #work img {
+    padding-bottom: 2em;
+  }
+
+  #work h3 {
+    font-size: 1.5em;
+    width: 7.9em;
+    margin: 0 auto;
+  }
+
+  #work p {
+    font-family: 'Lora', serif;
+    font-size: 1.125em;
+    line-height: 1.67em;
+    color: #2b2b2b;
+    padding: 0 2em;
+  }
+
+  /***** CONTACT *****/
+  #contact {
+    background: #ebebeb;
+    font-size: 1em;
+    height: 37.5em;
+  }
+
+  #contact .full-width {
+    padding: 6.875em 0 0 2em;
+  }
+
+  #contact-img {
+    border: 1px solid #ffffff;
+  }
+
+  #contact-info {
+    text-align: center;
+    margin-left: -2.5em;
+  }
+
+  #envelope {
+    padding: 0 .625em 0 0;
+    width: 1em;
+  }
+
+  #contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.25em;
+  }
+
+  #email-header {
+    font-size: 1.875em;
+    font-weight: normal;
+    margin: -1em 0 .167em 0;
+  }
+
+  #contact a {
+    color: #c49075;
+    font-weight: bold;
+    font-size: 1.75em;
+    text-decoration: none;
+  }
+
+  #contact ul {
+    list-style: none;
+  }
+
+  #contact ul li {
+    display: inline-block;
+  }
+
+  #contact ul img {
+    padding-right: 1em;
+    width: 1em;
+  }
 }
